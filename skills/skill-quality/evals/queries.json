@@ -1,0 +1,23 @@
+[
+  {"query": "audit the skill library for portability", "should_trigger": true},
+  {"query": "check that no skill leaked an absolute path, email, or username", "should_trigger": true},
+  {"query": "make sure the skills stayed brand-neutral and in their domain", "should_trigger": true},
+  {"query": "run the portability guardian over the skills", "should_trigger": true},
+  {"query": "did my last skill edit cause any scope creep", "should_trigger": true},
+  {"query": "verify every SKILL.md declares its functional domain", "should_trigger": true},
+  {"query": "check no skill hardcoded a model id or tool name in its prose", "should_trigger": true},
+  {"query": "confirm this self-improvement change didn't widen the skill's scope", "should_trigger": true},
+  {"query": "run the skill audit before I release the library", "should_trigger": true},
+  {"query": "flag any skill that invents a per-repo context file instead of reading the repo's docs", "should_trigger": true},
+
+  {"query": "grade whether my skill descriptions trigger on the right prompts", "should_trigger": false},
+  {"query": "refactor this production code to follow SOLID", "should_trigger": false},
+  {"query": "open a pull request for my changes", "should_trigger": false},
+  {"query": "scope this feature and define acceptance criteria", "should_trigger": false},
+  {"query": "delete the merged branches in my repo", "should_trigger": false},
+  {"query": "are these unit tests actually testing anything", "should_trigger": false},
+  {"query": "onboard this repo into my projects roster", "should_trigger": false},
+  {"query": "evaluate my agent's answers against a rubric", "should_trigger": false},
+  {"query": "write a new skill from scratch for me", "should_trigger": false},
+  {"query": "what does this regular expression match", "should_trigger": false}
+]

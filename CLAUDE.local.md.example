@@ -1,0 +1,15 @@
+# CLAUDE.local.md (example)
+
+Copy this to `CLAUDE.local.md` (gitignored) for machine-local context that should
+never be committed — absolute paths, personal preferences, environment quirks.
+
+## My environment
+
+- Primary dev root: `/path/to/your/workspace`
+- Preferred Python launcher: `py -3` (Windows) / `python3` (Unix)
+- Default coding agent: Claude Code
+
+## Notes
+
+Anything here overrides or augments the portable conventions in `CLAUDE.md` for
+your machine only. Keep secrets out — use your agent's secret store, not this file.

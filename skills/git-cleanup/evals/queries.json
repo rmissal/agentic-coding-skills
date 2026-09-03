@@ -1,0 +1,23 @@
+[
+  {"query": "delete the local branches that are already merged", "should_trigger": true},
+  {"query": "clean up stale branches in my repo", "should_trigger": true},
+  {"query": "prune branches whose upstream is gone", "should_trigger": true},
+  {"query": "my repo has dozens of old branches — tidy them up", "should_trigger": true},
+  {"query": "remove branches that were deleted on the remote", "should_trigger": true},
+  {"query": "fetch prune and drop the dead local branches", "should_trigger": true},
+  {"query": "do a git branch cleanup but dry-run it first", "should_trigger": true},
+  {"query": "get rid of merged feature branches I no longer need", "should_trigger": true},
+  {"query": "clean up gone branches across my onboarded repos", "should_trigger": true},
+  {"query": "safely delete local branches that are fully merged", "should_trigger": true},
+
+  {"query": "refactor this module to follow the repo conventions", "should_trigger": false},
+  {"query": "open a pull request for my changes", "should_trigger": false},
+  {"query": "scope this feature and write acceptance criteria", "should_trigger": false},
+  {"query": "are these tests actually testing anything", "should_trigger": false},
+  {"query": "add this repo to my projects roster", "should_trigger": false},
+  {"query": "audit the skills for leaked machine-local paths", "should_trigger": false},
+  {"query": "grade my skill trigger descriptions", "should_trigger": false},
+  {"query": "evaluate my agent's answers against a rubric", "should_trigger": false},
+  {"query": "commit and push my current work", "should_trigger": false},
+  {"query": "rename this variable everywhere", "should_trigger": false}
+]

@@ -1,0 +1,20 @@
+{
+  "enableAllProjectMcpServers": true,
+  "permissions": {
+    "deny": [
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(**/*.secret)",
+      "Read(**/secrets/**)",
+      "Read(**/.mcp-secrets/**)",
+      "Read(**/CLAUDE.local.md)",
+      "Bash(env)",
+      "Bash(printenv*)",
+      "Bash(set)",
+      "Bash(export*)",
+      "Bash(*.env*)",
+      "Bash(*secret*)",
+      "Bash(cat *.env*)"
+    ]
+  }
+}

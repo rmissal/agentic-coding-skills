@@ -1,0 +1,26 @@
+# projects-db.md (example)
+
+Machine-local roster of repositories you work in, maintained by the `projects-db`
+skill. Copy this to `projects-db.md` (gitignored) — or let `/projects-db onboard`
+create and populate it for you.
+
+**This file stores pointers, never content.** Per-repo context is read on demand
+from each repo's *own* standard docs (README.md / ARCHITECTURE.md / CLAUDE.md /
+CONTRIBUTING.md). Never paste architecture notes, secrets, or absolute-path
+secrets here.
+
+## Projects
+
+| name | path | language | default branch | context docs |
+|---|---|---|---|---|
+| example-service | /path/to/example-service | TypeScript | main | README.md, ARCHITECTURE.md |
+| example-lib | /path/to/example-lib | Python | main | README.md, CONTRIBUTING.md |
+
+### Field reference
+
+- **name** — short handle; defaults to the directory name.
+- **path** — absolute path to the repo root on this machine.
+- **language** — primary language, auto-detected from lockfiles/manifests.
+- **default branch** — from `git symbolic-ref refs/remotes/origin/HEAD`.
+- **context docs** — which of the repo's own standard docs exist and hold its
+  context. Skills open these directly; they are not duplicated here.
