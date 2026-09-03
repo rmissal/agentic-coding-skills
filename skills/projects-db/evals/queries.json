@@ -1,0 +1,23 @@
+[
+  {"query": "onboard this repository into my projects roster", "should_trigger": true},
+  {"query": "add my project to the projects database", "should_trigger": true},
+  {"query": "which projects do I have onboarded", "should_trigger": true},
+  {"query": "where is the payments-service project on disk", "should_trigger": true},
+  {"query": "list all the repos in my roster", "should_trigger": true},
+  {"query": "refresh the roster entry for this repo — it changed language", "should_trigger": true},
+  {"query": "register this repo so my skills can find it across projects", "should_trigger": true},
+  {"query": "what context docs does the api-gateway project have", "should_trigger": true},
+  {"query": "resolve this project name to its path and README", "should_trigger": true},
+  {"query": "profile this repo and add its path, language, and default branch to the roster", "should_trigger": true},
+
+  {"query": "refactor this code to match the repo conventions", "should_trigger": false},
+  {"query": "open a pull request for my finished work", "should_trigger": false},
+  {"query": "scope this feature and define acceptance criteria", "should_trigger": false},
+  {"query": "delete the merged branches in this repo", "should_trigger": false},
+  {"query": "are these tests actually asserting anything", "should_trigger": false},
+  {"query": "audit the skill library for portability leaks", "should_trigger": false},
+  {"query": "grade my skill trigger descriptions", "should_trigger": false},
+  {"query": "evaluate my agent's output against a rubric", "should_trigger": false},
+  {"query": "implement the new caching layer", "should_trigger": false},
+  {"query": "what's the difference between TCP and UDP", "should_trigger": false}
+]

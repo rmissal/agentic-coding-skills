@@ -1,0 +1,23 @@
+[
+  {"query": "refactor this module to follow the existing conventions in the repo", "should_trigger": true},
+  {"query": "add a function here and match the surrounding code style", "should_trigger": true},
+  {"query": "review this AI-generated code for hallucinated APIs and silent scope creep", "should_trigger": true},
+  {"query": "this class does too much — help me apply single-responsibility", "should_trigger": true},
+  {"query": "before I edit, how do I discover this repo's formatter and lint rules", "should_trigger": true},
+  {"query": "clean up this implementation — it repeats the same logic in three places", "should_trigger": true},
+  {"query": "fix this bug but make sure I follow the project's error-handling pattern", "should_trigger": true},
+  {"query": "is this change respecting separation of concerns or leaking layers", "should_trigger": true},
+  {"query": "implement the parser and keep it consistent with how the codebase names things", "should_trigger": true},
+  {"query": "walk the edit workflow for changing this file safely", "should_trigger": true},
+
+  {"query": "scope this feature and write the acceptance criteria before I build it", "should_trigger": false},
+  {"query": "open a pull request for my finished changes", "should_trigger": false},
+  {"query": "delete all the merged local branches in this repo", "should_trigger": false},
+  {"query": "are these tests actually asserting anything meaningful", "should_trigger": false},
+  {"query": "onboard this repository into my projects roster", "should_trigger": false},
+  {"query": "audit the skill library for leaked machine-local paths", "should_trigger": false},
+  {"query": "grade whether my skills trigger on the right prompts", "should_trigger": false},
+  {"query": "evaluate whether my agent's answers are correct against a rubric", "should_trigger": false},
+  {"query": "what's the weather forecast for tomorrow", "should_trigger": false},
+  {"query": "summarize this meeting transcript into action items", "should_trigger": false}
+]

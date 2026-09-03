@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# Repo-native git pre-commit hook.
+#
+# Install once:   git config core.hooksPath scripts/git-hooks
+# Uninstall:      git config --unset core.hooksPath
+#
+# Runs skill-frontmatter validation on staged SKILL.md files only, so it stays
+# fast on non-skill commits. Bypass in emergencies with `git commit --no-verify`
+# (please don't habitually).
+
+set -euo pipefail
+
+# Only care about staged, added-or-modified SKILL.md files. Anything else
+# (deletes, non-skill files) is skipped by the validator itself.
+staged_skills=$(git diff --cached --name-only --diff-filter=AM -- 'skills/**/SKILL.md' || true)
+
+if [[ -z "$staged_skills" ]]; then
+  exit 0
+fi
+
+# Cross-platform Python launcher: `py -3` on Windows, `python3` elsewhere.
+if command -v py >/dev/null 2>&1; then
+  py=(py -3)
+elif command -v python3 >/dev/null 2>&1; then
+  py=(python3)
+elif command -v python >/dev/null 2>&1; then
+  py=(python)
+else
+  echo "pre-commit: no python interpreter on PATH — skipping skill-frontmatter validation." >&2
+  exit 0
+fi
+
+# shellcheck disable=SC2086  # $staged_skills is intentionally word-split
+"${py[@]}" scripts/validate_skill_frontmatter.py $staged_skills

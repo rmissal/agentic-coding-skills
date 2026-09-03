@@ -1,0 +1,23 @@
+[
+  {"query": "help me scope this feature before I start building it", "should_trigger": true},
+  {"query": "what are the acceptance criteria for this task", "should_trigger": true},
+  {"query": "challenge my assumptions on what I'm about to build", "should_trigger": true},
+  {"query": "write a short spec for this change with goals and non-goals", "should_trigger": true},
+  {"query": "I'm not sure exactly what to build here — help me define it", "should_trigger": true},
+  {"query": "what are the open questions I should resolve before coding this", "should_trigger": true},
+  {"query": "restate this vague request as a concrete problem statement", "should_trigger": true},
+  {"query": "how will we verify this is done — define measurable success", "should_trigger": true},
+  {"query": "identify the target system and the inputs and outputs for this work", "should_trigger": true},
+  {"query": "the requirements feel fuzzy — run a requirements pass first", "should_trigger": true},
+
+  {"query": "refactor this module to match the repo's conventions", "should_trigger": false},
+  {"query": "open a pull request for my finished work", "should_trigger": false},
+  {"query": "prune the stale branches that are already merged", "should_trigger": false},
+  {"query": "review whether these tests actually verify behavior", "should_trigger": false},
+  {"query": "add this repo to my projects roster", "should_trigger": false},
+  {"query": "check that no skill leaked an absolute path", "should_trigger": false},
+  {"query": "grade my skill descriptions for trigger accuracy", "should_trigger": false},
+  {"query": "evaluate my agent's output quality against expected answers", "should_trigger": false},
+  {"query": "fix the failing build right now", "should_trigger": false},
+  {"query": "translate this paragraph into French", "should_trigger": false}
+]

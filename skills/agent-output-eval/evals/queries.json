@@ -1,0 +1,23 @@
+[
+  {"query": "evaluate whether my agent's answers are actually correct", "should_trigger": true},
+  {"query": "score the assistant's responses against an expected-quality rubric", "should_trigger": true},
+  {"query": "build an eval harness for my LLM agent's output", "should_trigger": true},
+  {"query": "run a batch of evaluation cases and give me a PASS/PARTIAL/FAIL table", "should_trigger": true},
+  {"query": "check that the agent produces a real answer, not just plausible-sounding text", "should_trigger": true},
+  {"query": "after this change, confirm the agent's output quality held up", "should_trigger": true},
+  {"query": "define evaluation cases with prompts and expected qualities for my agent", "should_trigger": true},
+  {"query": "grade the model's answers for correctness, completeness, and structure", "should_trigger": true},
+  {"query": "does the agent preserve context across a multi-turn conversation — evaluate it", "should_trigger": true},
+  {"query": "roll up the results of my agent output evaluation into a summary", "should_trigger": true},
+
+  {"query": "grade whether my skill descriptions trigger on the right prompts", "should_trigger": false},
+  {"query": "are these unit tests actually asserting anything", "should_trigger": false},
+  {"query": "refactor this code to match repo conventions", "should_trigger": false},
+  {"query": "open a pull request for my changes", "should_trigger": false},
+  {"query": "scope this feature before I build it", "should_trigger": false},
+  {"query": "delete the merged branches in this repo", "should_trigger": false},
+  {"query": "onboard this repo into my projects roster", "should_trigger": false},
+  {"query": "audit the skill library for portability leaks", "should_trigger": false},
+  {"query": "write the implementation for this endpoint", "should_trigger": false},
+  {"query": "what's the capital of Australia", "should_trigger": false}
+]

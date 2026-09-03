@@ -1,0 +1,23 @@
+[
+  {"query": "are these tests actually asserting anything or just passing", "should_trigger": true},
+  {"query": "review the quality of this test suite", "should_trigger": true},
+  {"query": "this test passes but I don't trust it — check it", "should_trigger": true},
+  {"query": "how rigorously should I test this change", "should_trigger": true},
+  {"query": "the mocks might be mocking away the behavior under test", "should_trigger": true},
+  {"query": "does this test ever hit the real system or only fixtures", "should_trigger": true},
+  {"query": "help me tell a real defect from a bad or outdated test", "should_trigger": true},
+  {"query": "is this test just testing the framework instead of my code", "should_trigger": true},
+  {"query": "validate that these assertions would actually catch a regression", "should_trigger": true},
+  {"query": "pick a testing rigor level — smoke, standard, or full — for this", "should_trigger": true},
+
+  {"query": "refactor this production module to follow SOLID", "should_trigger": false},
+  {"query": "open a pull request for my work", "should_trigger": false},
+  {"query": "scope this feature and define acceptance criteria", "should_trigger": false},
+  {"query": "clean up the merged branches in my repo", "should_trigger": false},
+  {"query": "add this repo to my projects roster", "should_trigger": false},
+  {"query": "audit the skill library for leaked paths", "should_trigger": false},
+  {"query": "grade my skill descriptions for trigger accuracy", "should_trigger": false},
+  {"query": "evaluate my agent's answers against expected outputs", "should_trigger": false},
+  {"query": "write the actual implementation of this parser", "should_trigger": false},
+  {"query": "convert this JSON to YAML", "should_trigger": false}
+]
