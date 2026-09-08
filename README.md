@@ -64,6 +64,7 @@ No secret fetching, no MCP-server build, no external services required.
 | `projects-db` | Maintain the machine-local multi-repo roster | `/projects-db` |
 | `grade-skills` | Grade + auto-optimize skill trigger descriptions | `/grade-skills` |
 | `skill-quality` | Portability + functional-domain guardian for the library | `/skill-quality` |
+| `project-management` | Govern project lifecycle, milestone roadmaps, sprints, and artifact sync | `/project-management` |
 | `skill-creator` | *(upstream, installed at setup)* author/optimize skills | `/skill-creator` |
 | `mcp-builder` | *(upstream, installed at setup)* build MCP servers | `/mcp-builder` |
 
