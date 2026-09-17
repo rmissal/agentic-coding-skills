@@ -65,6 +65,7 @@ No secret fetching, no MCP-server build, no external services required.
 | `grade-skills` | Grade + auto-optimize skill trigger descriptions | `/grade-skills` |
 | `skill-quality` | Portability + functional-domain guardian for the library | `/skill-quality` |
 | `project-management` | Govern project lifecycle, milestone roadmaps, sprints, and artifact sync | `/project-management` |
+| `safe-ftp-deploy` | Pre-upload security audit & safe deployment to FTP/FTPS/SFTP | auto |
 | `skill-creator` | *(upstream, installed at setup)* author/optimize skills | `/skill-creator` |
 | `mcp-builder` | *(upstream, installed at setup)* build MCP servers | `/mcp-builder` |
 

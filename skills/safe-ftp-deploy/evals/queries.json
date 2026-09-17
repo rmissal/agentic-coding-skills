@@ -1,0 +1,23 @@
+[
+  {"query": "deploy this website to our FTP server", "should_trigger": true},
+  {"query": "upload the public assets to webspace via FTPS", "should_trigger": true},
+  {"query": "push these files to our hosting using the FTP MCP server", "should_trigger": true},
+  {"query": "make sure we don't upload sensitive artifacts like .env or keys over FTP", "should_trigger": true},
+  {"query": "run a pre-upload security scan before syncing to the remote FTP", "should_trigger": true},
+  {"query": "upload the new index.html and style.css to ftp.example.com", "should_trigger": true},
+  {"query": "safely deploy the static build to our SFTP server", "should_trigger": true},
+  {"query": "check if any private keys or tokens would leak during FTP deployment", "should_trigger": true},
+  {"query": "sync this directory to our web root over FTP", "should_trigger": true},
+  {"query": "transfer the built files to the live server using FTP", "should_trigger": true},
+
+  {"query": "open a pull request for my changes", "should_trigger": false},
+  {"query": "refactor this function to match the codebase style", "should_trigger": false},
+  {"query": "scope the feature and list acceptance criteria first", "should_trigger": false},
+  {"query": "delete the branches that are already merged", "should_trigger": false},
+  {"query": "are these unit tests actually testing anything", "should_trigger": false},
+  {"query": "onboard this repo into the projects roster", "should_trigger": false},
+  {"query": "audit the skills for portability leaks", "should_trigger": false},
+  {"query": "score my agent's answers against a rubric", "should_trigger": false},
+  {"query": "explain how this algorithm works", "should_trigger": false},
+  {"query": "what time zone is this timestamp in", "should_trigger": false}
+]
