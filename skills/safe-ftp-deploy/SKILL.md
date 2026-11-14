@@ -68,7 +68,7 @@ python scripts/safe_ftp_scan.py /path/to/upload-folder
 ```
 
 * Flags:
-  * `--enforce-web-allowlist`: Rejects any file that is not a standard web asset (`.html`, `.css`, `.js`, `.webp`, `.jpg`, `.png`, `.svg`, `.ico`, `.woff2`, etc.).
+  * `--enforce-web-allowlist`: Rejects any file that is not a standard web asset (`.html`, `.css`, `.js`, `.webp`, `.jpg`, `.png`, `.svg`, `.ico`, `.woff2`, `.mp3`, `.ogg`, etc.).
   * `--quiet`: Silences informational logs; prints only critical violations.
 * If the script exits with code 1, **STOP IMMEDIATELY**. Do not proceed with the upload until all flagged files are removed or cleaned.
 
@@ -82,7 +82,7 @@ Once the scan passes cleanly:
 1. Ensure the remote directory exists using the `create-directory` MCP tool.
 2. Upload individual files using the `upload-file` MCP tool:
    - Use `encoding: "utf8"` for text files (`.html`, `.css`, `.js`, `.txt`, `.svg`).
-   - Use `encoding: "base64"` for binary files (`.jpg`, `.webp`, `.png`, `.ico`, `.woff2`).
+   - Use `localPath` for binary/media files (`.jpg`, `.webp`, `.png`, `.ico`, `.woff2`, `.mp3`, `.ogg`) to stream directly from disk without inline base64 overhead, or fall back to `encoding: "base64"` if local-path streaming is unavailable.
 
 ---
 

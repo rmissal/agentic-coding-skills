@@ -50,8 +50,10 @@ Ensure only standard web assets are staged for upload:
 * **Styling**: `.css`
 * **Scripts**: `.js`, `.mjs`, `.map`
 * **Images**: `.webp`, `.jpg`, `.jpeg`, `.png`, `.svg`, `.ico`, `.gif`, `.avif`
+* **Audio & Media**: `.mp3`, `.ogg`, `.wav`, `.m4a`, `.mp4`, `.webm`
 * **Fonts**: `.woff`, `.woff2`, `.ttf`, `.eot`
-* **Data / Metadata**: `.webmanifest`, `.xml`, `.txt`
+* **Data / Metadata**: `.webmanifest`, `.xml`, `.txt`, `.json`
+* **Server Configuration**: `.htaccess` (Apache configuration without sensitive internal credentials)
 
 ### Step 3: Destination Isolation
 * Ensure uploads only target the intended web root (e.g. `/` or `/public_html/` or `/htdocs/`).

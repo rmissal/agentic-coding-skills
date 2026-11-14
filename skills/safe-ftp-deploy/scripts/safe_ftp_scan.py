@@ -64,7 +64,13 @@ SAFE_WEB_EXTENSIONS = {
     ".html", ".htm", ".css", ".js", ".mjs", ".map",
     ".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg", ".ico", ".avif",
     ".woff", ".woff2", ".ttf", ".eot", ".otf",
+    ".mp3", ".ogg", ".wav", ".m4a", ".mp4", ".webm",
     ".xml", ".txt", ".json", ".webmanifest"
+}
+
+# Safe standalone web configuration filenames without regular extensions
+SAFE_WEB_FILENAMES = {
+    ".htaccess"
 }
 
 def is_text_file(filepath):
@@ -154,7 +160,7 @@ def scan_path(target_path, check_allowlist=False):
             all_violations.append(f"[FILENAME VIOLATION] {rel} => {issue}")
 
         # 2. Allowlist checks (if enabled)
-        if check_allowlist and f.suffix.lower() not in SAFE_WEB_EXTENSIONS:
+        if check_allowlist and f.suffix.lower() not in SAFE_WEB_EXTENSIONS and f.name.lower() not in SAFE_WEB_FILENAMES:
             all_violations.append(
                 f"[ALLOWLIST VIOLATION] {rel} => Non-standard public web asset extension: '{f.suffix}'"
             )
