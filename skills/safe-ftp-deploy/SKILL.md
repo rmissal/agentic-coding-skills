@@ -22,7 +22,7 @@ This skill establishes a strict, automated security boundary for any deployment 
 ## 1. When to Use This Skill
 
 Trigger this skill immediately whenever:
-- You are about to call an FTP MCP tool (`upload-file`, `create-directory`, or equivalent).
+- You are about to call an FTP MCP tool (`upload-file`, `upload-local-file`, `create-directory`, or equivalent).
 - You are writing, editing, or executing an FTP/SFTP upload script.
 - The user requests to "deploy", "upload to FTP", "push to website", or "sync files to webspace".
 - Reviewing an FTP deployment workflow to ensure sensitive files are not exposed.
@@ -80,9 +80,9 @@ Before sending files over the FTP MCP server:
 ### Step 3: Perform the Transfer via FTP MCP
 Once the scan passes cleanly:
 1. Ensure the remote directory exists using the `create-directory` MCP tool.
-2. Upload individual files using the `upload-file` MCP tool:
-   - Use `encoding: "utf8"` for text files (`.html`, `.css`, `.js`, `.txt`, `.svg`).
-   - Use `localPath` for binary/media files (`.jpg`, `.webp`, `.png`, `.ico`, `.woff2`, `.mp3`, `.ogg`) to stream directly from disk without inline base64 overhead, or fall back to `encoding: "base64"` if local-path streaming is unavailable.
+2. Upload individual files:
+   - Prefer `upload-local-file` (`localPath` + `remotePath`) for binary/media files (`.jpg`, `.webp`, `.png`, `.ico`, `.woff2`, `.mp3`, `.ogg`) and larger assets to stream directly from disk without inline base64 overhead (requires the source directory in `FTP_LOCAL_ROOTS`).
+   - Use `upload-file` with `encoding: "utf8"` for text files (`.html`, `.css`, `.js`, `.txt`, `.svg`), or `encoding: "base64"` as a fallback when `upload-local-file` is unavailable.
 
 ---
 
